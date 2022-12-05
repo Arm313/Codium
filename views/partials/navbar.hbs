@@ -1,0 +1,40 @@
+<header class="header">
+  <a href="/" id="logo"><img src="/imgs/Artboard 3.svg" alt="Codium" />
+  </a>
+  <a id="menu_icn">
+    <i class="fa-solid fa-bars"></i>
+  </a>
+  <ul id="nav" class="menu">
+
+    {{#if isContacts}}
+      <li class="menu-item active">
+        <a href="/contacts">Контакты</a>
+      </li>
+    {{else}}
+      <li class="menu-item">
+        <a href="/contacts">Контакты</a>
+      </li>
+    {{/if}}
+
+    {{#if isServices}}
+      <li class="menu-item active">
+        <a href="/services">Услуги</a>
+      </li>
+    {{else}}
+      <li class="menu-item">
+        <a href="/services">Услуги</a>
+      </li>
+    {{/if}}
+
+    {{#if isAbout}}
+      <li class="menu-item active">
+        <a href="/about">О нас</a>
+
+      </li>
+    {{else}}
+      <li class="menu-item">
+        <a href="/about">О нас</a>
+      </li>
+    {{/if}}
+  </ul>
+</header>
