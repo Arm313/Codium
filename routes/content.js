@@ -40,5 +40,43 @@ router.get("/design", async (req, res) => {
     ],
   });
 });
+router.get("/management", async (req, res) => {
+  res.render("management", {
+    title: "Management of web projectss",
+    path: [
+      {
+        name: `Главная \u{2192}`,
+        path: "/",
+      },
+      {
+        name: "Услуги  \u{2192}",
+        path: "/services",
+      },
+      {
+        name: "Management of web projects",
+        path: "/content/management",
+      },
+    ],
+  });
+});
+router.get("/maintenance", async (req, res) => {
+  res.render("maintenance", {
+    title: "Обслуживание веб-сайтов",
+    path: [
+      {
+        name: `Главная \u{2192}`,
+        path: "/",
+      },
+      {
+        name: "Услуги  \u{2192}",
+        path: "/services",
+      },
+      {
+        name: "Обслуживание веб-сайтов",
+        path: "/content/maintenance",
+      },
+    ],
+  });
+});
 
 module.exports = router;
